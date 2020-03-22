@@ -92,7 +92,7 @@ var control = L.control.layers(baseMaps,overlayMaps, {
 }).addTo(map);
 
 // search bar
-var searchControl = new L.esri.Controls.Geosearch().addTo(map);
+var searchControl = new L.esri.Controls.Geosearch({position:'topright'}).addTo(map);
 
 var results = new L.LayerGroup().addTo(map);
 
